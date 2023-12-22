@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Play FISH LOVE Unblocked</title>
+        <title>Tiny Fishing</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="assets/css/default.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
-        
     </head>
     <body>
 
@@ -54,7 +53,7 @@
         <div class="main-content">
             <!-- header-area -->
             <header>
-                <div class="menu-area" style="margin-top: 0px;">
+                <div class="menu-area">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
@@ -115,7 +114,54 @@
             <!-- main-area -->
             <main>
 
-                <iframe src="https://kr.unblockedgamesmom.net/mom.html#https://html5.gamedistribution.com/rvvASMiM/714caa9b970d47c78729c961faa998f8/?gd_sdk_referrer_url=https://gamedistribution.com/games/dressing-up-rush" id="gameframe"  style="width:100%;min-height:89vh;margin-top: 130px;" frameborder="0"></iframe>
+                <!-- breadcrumb-area -->
+                <section class="breadcrumb-area breadcrumb-bg">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="breadcrumb-content text-center">
+                                    <h3 class="title">List Game</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- breadcrumb-area-end -->
+
+                <!-- category-area -->
+                <div class="category-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="category-list">
+                                    <li><a href="/2-player.html">2 Player</a></li>
+                                    <li><a href="/action.html">Action</a></li>
+                                    <li><a href="/adventure.html">Adventure</a></li>
+                                    <li><a href="/shooting.html">Shooting</a></li>
+                                    <li><a href="/car.html">Car</a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- category-area-end -->
+
+                <!-- explore-products-area -->
+                <section class="inner-explore-products">
+                    <div class="container">
+                        <div class="explore-product-filter">
+                            <div class="section-title mb-45">
+                                <h2 class="title">Car Games <img src="assets/img/icons/title_icon01.png" alt=""></h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center" id="listGame">
+                            
+                        </div>
+                    </div>
+                </section>
+                <!-- explore-products-area-end -->
+
             </main>
             <!-- main-area-end -->
 
@@ -178,7 +224,6 @@
                                 <ul class="copyright-link-list">
                                     <li><a href="privacy.html">Privacy Policy</a></li>
                                     <li><a href="terms.html">Terms And Condition</a></li>
-                 
                                 </ul>
                             </div>
                         </div>
@@ -203,5 +248,71 @@
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            showList("data/car.json");
+            function showList(file){
+                
+                fetch("/"+file,{
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }).then(response => response.json())
+                .then(data => {
+                    let html = "";
+                    var listGame = [];
+                    var listCheck = [];
+                    data.forEach(item => {
+                    var tmp = {};
+                    tmp.title = item.title;
+                    tmp.domain = item.domain;
+                    tmp.img = item.img;
+                    tmp.slug = item.slug;
+                    tmp.cat = item.cat;
+                    if(item.ext){
+                        tmp.ext = item.ext;
+                    }
+                    if(listCheck.indexOf(item.slug) == -1){
+                        listCheck.push(item.slug);
+                        listGame.push(tmp);
+                    }
+                    });
+                    listGame.sort(function (a, b){
+                        if (a.title.toUpperCase() < b.title.toUpperCase()) {
+                            return -1;
+                        }
+                        if (a.title.toUpperCase() > b.title.toUpperCase()) {
+                            return 1;
+                        }
+                        return 0;
+                    });
+                    listGame.forEach((item) =>{
+                        var img = item.img;
+                        var slug = "/game/"+item.slug+".html";
+
+                        const htmlItem = `<div class="col-xl-3 col-lg-2 col-md-6 col-sm-6">
+                                <div class="top-collection-item">
+                                    <div class="collection-item-thumb">
+                                        <a href="${slug}"><img src="${img}" style="width:100%" alt="${item.title}"></a>
+                                    </div>
+                                    <div class="collection-item-content">
+                                        <h5 class="title"><a href="${slug}">${item.title}</a></h5>
+                                    </div>
+                                    <div class="collection-item-bottom">
+                                        <ul>
+                                            <li class="bid"><a href="${slug}" class="btn">Play</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>`;
+                        
+                        html += htmlItem;
+                    });
+                    document.getElementById('listGame').innerHTML = html;
+                })
+                
+                
+
+            }
+        </script>
     </body>
 </html>
