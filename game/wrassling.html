@@ -1,1020 +1,873 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Play Wrassling Game</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Play Wrassling Game</title>
 
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="" />
-        <meta name="content-language" content="en" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/img/tiny-fishing-logo.png" title="Tiny Fishing" />
-<meta name="og:image" content="/img/tiny-fishing-logo.png" />
-<script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8136533182122624"
-  crossorigin="anonymous"
-></script>
-<!-- Google tag (gtag.js) -->
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-PXW1CVZ4F6"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="" />
+    <meta name="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/img/tiny-fishing-logo.png" title="Tiny Fishing" />
+    <meta name="og:image" content="/img/tiny-fishing-logo.png" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8136533182122624"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PXW1CVZ4F6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag("config", "G-PXW1CVZ4F6");
-</script>
+      gtag("config", "G-PXW1CVZ4F6");
+    </script>
 
-        <link rel="stylesheet" href="/css/style.css?v=1">
-        
-    </head>
-    <body>
-        <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="navbar-filler-left"></div>
-    <div class="container is-fullhd">
+    <link rel="stylesheet" href="/css/style.css?v=1" />
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="navbar"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <div class="navbar-filler-left"></div>
+      <div class="container is-fullhd">
         <div class="navbar-brand">
-            <button class="navbar-burger" aria-label="Open main navigation" aria-expanded="false" data-target="menu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
-            <a class="navbar-item" href="/" aria-label="Logo">
-                <img
-                   src="/img/tiny-fishing-logo.png"
-                    width="138"
-                    height="31"
-                    alt="Tiny Fishing Logo"
-                />
-
-            </a>
+          <button
+            class="navbar-burger"
+            aria-label="Open main navigation"
+            aria-expanded="false"
+            data-target="menu"
+          >
+            <span aria-hidden="true"></span><span aria-hidden="true"></span
+            ><span aria-hidden="true"></span>
+          </button>
+          <a class="navbar-item" href="/" aria-label="Logo">
+            <img
+              src="/img/tiny-fishing-logo.png"
+              width="138"
+              height="31"
+              alt="Tiny Fishing Logo"
+            />
+          </a>
         </div>
         <div id="menu" class="navbar-menu">
-            <div class="navbar-start">
-                
-                <div class="navbar-item is-mouseable">
-                    <div class="navbar-link">
-                        <a class="button navbar-control" href="/category/car.html" title="Car">
-                            Car
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="navbar-item is-mouseable">
-                    <div class="navbar-link">
-                        <a class="button navbar-control" href="/category/skill.html" title="Skill">
-                            Skill
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="navbar-item is-mouseable">
-                    <div class="navbar-link">
-                        <a class="button navbar-control" href="/category/action.html" title="Action">
-                            Action
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="navbar-item is-mouseable">
-                    <div class="navbar-link">
-                        <a class="button navbar-control" href="/category/puzzle.html" title="Puzzle">
-                            Puzzle
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="navbar-item is-mouseable">
-                    <div class="navbar-link">
-                        <a class="button navbar-control" href="/category/shooting.html" title="Shooting">
-                            Shooting
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="navbar-item is-mouseable">
-                    <div class="navbar-link">
-                        <a class="button navbar-control" href="/category/sports.html" title="Sport">
-                            Sport
-                        </a>
-                    </div>
-                </div>
-                
-               
+          <div class="navbar-start">
+            <div class="navbar-item is-mouseable">
+              <div class="navbar-link">
+                <a
+                  class="button navbar-control"
+                  href="/category/car.html"
+                  title="Car"
+                >
+                  Car
+                </a>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="navbar-filler-right"></div>
-</nav>
 
-        <div id="category_takeover" style="height: 0px;"></div>
-        
-        <section class="section" style="height: auto !important;">
-          
-            <div class="game" id="detail" data-src="https://eggy-car.github.io/game12/wrassling/" style="height: 30vh;">
-              <div class="talpa-splash-container" style="background: var(--color2);"><div class="talpa-splash-top"><div><div style="--thumb:url(https://slope-game.github.io/img/wrassling.png)" alt="wrassling.md"></div><button id="play-btn" onclick="playGame()" class="SP-splash-button bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+            <div class="navbar-item is-mouseable">
+              <div class="navbar-link">
+                <a
+                  class="button navbar-control"
+                  href="/category/skill.html"
+                  title="Skill"
+                >
+                  Skill
+                </a>
+              </div>
+            </div>
+
+            <div class="navbar-item is-mouseable">
+              <div class="navbar-link">
+                <a
+                  class="button navbar-control"
+                  href="/category/action.html"
+                  title="Action"
+                >
+                  Action
+                </a>
+              </div>
+            </div>
+
+            <div class="navbar-item is-mouseable">
+              <div class="navbar-link">
+                <a
+                  class="button navbar-control"
+                  href="/category/puzzle.html"
+                  title="Puzzle"
+                >
+                  Puzzle
+                </a>
+              </div>
+            </div>
+
+            <div class="navbar-item is-mouseable">
+              <div class="navbar-link">
+                <a
+                  class="button navbar-control"
+                  href="/category/shooting.html"
+                  title="Shooting"
+                >
+                  Shooting
+                </a>
+              </div>
+            </div>
+
+            <div class="navbar-item is-mouseable">
+              <div class="navbar-link">
+                <a
+                  class="button navbar-control"
+                  href="/category/sports.html"
+                  title="Sport"
+                >
+                  Sport
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-filler-right"></div>
+    </nav>
+
+    <div id="category_takeover" style="height: 0px"></div>
+
+    <section class="section" style="height: auto !important">
+      <div
+        class="game"
+        id="detail"
+        data-src="https://eggy-car.github.io/game12/wrassling/"
+        style="height: 30vh"
+      >
+        <div class="talpa-splash-container" style="background: var(--color2)">
+          <div class="talpa-splash-top">
+            <div>
+              <div
+                style="
+                  --thumb: url(https://slope-game.github.io/img/wrassling.png);
+                "
+                alt="wrassling.md"
+              ></div>
+              <button
+                id="play-btn"
+                onclick="playGame()"
+                class="SP-splash-button bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all"
+              >
                 Play
               </button>
-              <div class="talpa-loader" style="display: none;">Loading...</div></div></div><div class="talpa-splash-bottom"></div></div>
-              
+              <div class="talpa-loader" style="display: none">Loading...</div>
             </div>
- 
-    
-        </section>
-        <section class="section footer-description">
-          <div class="container is-max-widescreen">
-            <div class="game-desc">
-                <h2 id="wrassling">Wrassling</h2>
+          </div>
+          <div class="talpa-splash-bottom"></div>
+        </div>
+      </div>
+    </section>
 
-<style>
-          h1, h2 {
+    <section class="section">
+      <div class="container" id="listgame" style="margin-top: 20px">
+        <div
+          class="grid is-4-tablet is-4-desktop is-6-widescreen is-6-fullhd is-7-ultrawide"
+        >
+          <a
+            href="/game/game2.html"
+            target="_self"
+            title="Retro Bowl"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://webglmath.github.io/retro-bowl/logo.png"
+                alt="Retro Bowl"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Retro Bowl</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/basket-ball.html"
+            target="_self"
+            title="Basket and Ball"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://webglmath.github.io/basket-ball/logo.png"
+                alt="Basket and Ball"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Basket and Ball</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/basketball-legends.html"
+            target="_self"
+            title="Basketball Legends"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://webglmath.github.io/basketball-legends/logo.png"
+                alt="Basketball Legends"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Basketball Legends</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/basketball-stars.html"
+            target="_self"
+            title="Basketball Stars"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://webglmath.github.io/basketball-stars/logo.png"
+                alt="Basketball Stars"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Basketball Stars</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/dunkbrush.html"
+            target="_self"
+            title="Dunkbrush"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://slope-game.github.io/img/dunkbrush.png"
+                alt="Dunkbrush"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Dunkbrush</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/football-legends.html"
+            target="_self"
+            title="Football Legends"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://webglmath.github.io/football-legends/logo.png"
+                alt="Football Legends"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Football Legends</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/golfinity.html"
+            target="_self"
+            title="golfinity"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://slope-game.github.io/img/golfinity.png"
+                alt="golfinity"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>golfinity</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/parkour-race.html"
+            target="_self"
+            title="Parkour Race"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://slope-game.github.io/rungame/parkour-race/logo.png"
+                alt="Parkour Race"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Parkour Race</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/penalty-kick-online.html"
+            target="_self"
+            title="Penalty kick online"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://webglmath.github.io/penalty-kick-online/logo.png"
+                alt="Penalty kick online"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Penalty kick online</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/penalty-shooters-2.html"
+            target="_self"
+            title="Penalty Shooters 2"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://ubg77.github.io/edit/penalty-shooters-2/logo.png"
+                alt="Penalty Shooters 2"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Penalty Shooters 2</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/tap-tap-shots.html"
+            target="_self"
+            title="Tap Tap Shots"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://ubg77.github.io/game131022/tap-tap-shots/logo.png"
+                alt="Tap Tap Shots"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Tap Tap Shots</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="/game/wrassling.html"
+            target="_self"
+            title="Wrassling"
+            class="tile-card"
+          >
+            <figure class="image is-16by9">
+              <img
+                loading="lazy"
+                src="https://slope-game.github.io/img/wrassling.png"
+                alt="Wrassling"
+              />
+            </figure>
+            <div class="content">
+              <div class="name">
+                <span>Wrassling</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section footer-description">
+      <div class="container is-max-widescreen">
+        <div class="game-desc">
+          <h2 id="wrassling">Wrassling</h2>
+
+          <style>
+            h1,
+            h2 {
               color: rgb(241, 145, 90);
               font-size: 1.5em;
-          }
-      </style>
+            }
+          </style>
 
-<h1>Wrassling: Redefining Wrestling with 9 New Standards in Digital Combat</h1>
-<p>As the digital gaming industry continues to evolve, we see new and innovative games being released every day. One such game that has captured the attention of gamers all over the world is Wrassling. Developed by Tiny Fishing, this web arcade game brings a unique twist to the traditional concept of wrestling.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HBe7WZ1F7dM" frameborder="0" allowfullscreen=""></iframe>
-<p>With its simple yet addictive gameplay, Wrassling has gained a huge following and has set new standards for digital combat games. In this article, we will take an in-depth look at Wrassling and explore its various aspects including gameplay, tips and tricks, strategies, and more. So, let's jump into the ring and discover what makes Wrassling stand out from the crowd.</p>
-<h2>Wrassling: An Overview</h2>
-<p>Wrassling is a web arcade game created by Tiny Fishing. The objective of the game is to throw your opponent out of the ring. This wrestling game allows you to battle multiple opponents at once, adding an element of chaos and excitement to the gameplay. You can use your arms to punch and grab your enemies, and then hurl them across the screen using ropes.</p>
-<p>The game features a variety of characters with different abilities and strengths. Each character also has a unique appearance with unlockable hats and new targets to aim for. Let's dive deeper into the gameplay mechanics of Wrassling.</p>
-<h2>Wrassling Unblocked: How to Play</h2>
-<p>To play Wrassling, all you need is a computer or mobile device with an internet connection. The game is available on various websites, and you can easily find it by searching for "Wrassling unblocked."</p>
-<p>Once you launch the game, you will be greeted with a simple but colorful interface. Click on the "Play" button to start the game. You will then be taken to a selection screen where you can choose your character. At the beginning of the game, you will have access to only one character, but as you progress and unlock achievements, you can play with new characters.</p>
-<p>Once you have selected your character, you will be taken to the ring, where the real action begins. The controls are simple - use the left and right arrow keys to move your wrestler and the "X" key to punch and grab. If you're playing on a mobile device, you can use the on-screen buttons to control your wrestler's movements and attacks.</p>
-<p>The aim is to throw your opponents out of the ring using the ropes while avoiding getting thrown out yourself. As you progress, the number of opponents and the size of the ring increases, making the gameplay more challenging and exciting.</p>
-<h2>Some games on "Tiny Fishing" you might like:</h2>
-<li><a href="https://tiny-fishing.github.io/game/basket-ball.html">Basket Ball</a></li>
-<li><a href="https://tiny-fishing.github.io/game/basketball-legends.html">Basketball Legends</a></li>
-<li><a href="https://tiny-fishing.github.io/game/basketball-stars.html">Basketball Stars</a></li>
-<li><a href="https://tiny-fishing.github.io/game/penalty-shooters-2.html">Penalty Shooters 2</a></li>
-<li><a href="https://tiny-fishing.github.io/game/penalty-kick-online.html">Penalty Kick Online</a></li>
-<li><a href="https://tiny-fishing.github.io/game/parkour-race.html">Parkour Race</a></li>
-<h2>Wrassling Tiny Fishing: A Guide</h2>
-<p>As mentioned earlier, Wrassling was developed by Tiny Fishing, a small web arcade game development company based in the Netherlands. The company has created several popular games, including Wrassling, which has gained immense popularity among players of all ages.</p>
-<p>Tiny Fishing creates games with simplistic graphics and gameplay, yet their games are highly addictive and fun to play. Their approach to game design is to create games that can be played by anyone, anywhere, at any time. And they have successfully achieved this with Wrassling, making it a must-try for all gaming enthusiasts.</p>
-<h2>Wrassling: Tips and Tricks</h2>
-<p>While Wrassling may seem like a simple game at first, mastering it requires skill and strategy. Here are some tips and tricks that will help you become a pro at Wrassling:</p>
-<h3>Timing is Everything</h3>
-<p>Since Wrassling is all about throwing your opponents out of the ring, timing is crucial. Wait for the right moment to strike and make sure to time your punches and grabs perfectly. Anticipate your opponent's moves and use the ropes to your advantage to throw them off balance.</p>
-<h3>Use the Walls</h3>
-<p>In addition to the ropes, you can also use the walls to your advantage. When your opponents are near a wall, grab them and slam them against it. This will cause significant damage and make it easier for you to push them out of the ring.</p>
-<h3>Unlock New Characters</h3>
-<p>As you progress in the game and complete achievements, you will unlock new characters with different abilities and appearances. Each character has its own strengths and weaknesses, so make sure to try them all out and find one that suits your playstyle.</p>
-<h3>Practice Makes Perfect</h3>
-<p>Like any other game, practice is essential for becoming a pro at Wrassling. Spend some time getting familiar with the controls and experimenting with different strategies. With time, you will become more confident and skilled, making it easier to defeat your opponents.</p>
-<h2>Wrassling: A Step-by-Step Guide</h2>
-<p>If you're new to Wrassling and need some help getting started, here's a step-by-step guide to help you out:</p>
-<p>Step 1: Launch the Game Open your web browser and search for "Wrassling unblocked." Choose a website that offers the game and click on the "Play" button.</p>
-<p>Step 2: Select Your Character On the selection screen, choose your character by clicking on their name or image.</p>
-<p>Step 3: Learn the Controls Familiarize yourself with the controls by using the left and right arrow keys to move and the "X" key to punch and grab. If you're using a mobile device, use the on-screen buttons to control your wrestler's movements and attacks.</p>
-<p>Step 4: Start Playing Once you've got a hang of the controls, click on the "Start" button to begin the game.</p>
-<p>Step 5: Defeat Your Opponents Use your punches and grabs to throw your opponents out of the ring while avoiding getting thrown out yourself. The number of opponents and the size of the ring will increase as you progress, so make sure to stay on your toes.</p>
-<p>Step 6: Unlock Achievements As you battle your opponents, you will unlock achievements, which will help you progress in the game and unlock new characters.</p>
-<p>Step 7: Keep Playing! Wrassling is an addictive game, and you can keep playing for hours without getting bored. So, keep battling and improving your skills to become the ultimate Wrassling champion.</p>
-<h2>Wrassling: The Ultimate FAQ</h2>
-<p>Here are some frequently asked questions about Wrassling:</p>
-<p>Q: How many characters are there in Wrassling? A: There are a total of 12 characters in Wrassling, but you will have access to only one at the beginning of the game.</p>
-<p>Q: Can I play Wrassling on my mobile device? A: Yes, Wrassling is available to play on both computers and mobile devices.</p>
-<p>Q: Is Wrassling a multi-player game? A: No, Wrassling is a single-player game.</p>
-<p>Q: Are there any cheats for Wrassling? A: No, there are no cheats for Wrassling. The key to winning is practice and skill.</p>
-<p>Q: How do I unlock new characters in Wrassling? A: You can unlock new characters by completing achievements in the game.</p>
-<h2>Wrassling vs. Other Games</h2>
-<p>While there are many wrestling games out there, Wrassling stands out from the crowd with its unique gameplay and simplistic design. Here's how it compares to other popular wrestling games:</p>
-<h3>Wrassling vs. WWE 2K</h3>
-<p>One of the most popular wrestling games, WWE 2K, offers realistic graphics and gameplay. However, it can be quite complex and challenging for casual gamers. On the other hand, Wrassling provides a more light-hearted and fun experience with its simple controls and chaotic gameplay.</p>
-<h3>Wrassling vs. Ultimate Wrestling</h3>
-<p>Ultimate Wrestling is a 2D wrestling game that features similar gameplay to Wrassling. However, Wrassling offers more characters and a wider variety of gameplay elements, making it a more engaging and entertaining option.</p>
-<h2>Wrassling: A Comprehensive Review</h2>
-<p>Now that we've covered the gameplay, tips and tricks, and other aspects of Wrassling, let's take a step back and look at the game as a whole.</p>
-<h3>Graphics and Sound</h3>
-<p>Wrassling may not have realistic graphics, but its colorful and cartoonish design adds to the charm of the game. The sound effects are also minimal but effective, adding to the overall experience.</p>
-<h3>Gameplay</h3>
-<p>The gameplay of Wrassling is simple yet addictive. The chaos and unpredictability of battling multiple opponents at once make it challenging and fun to play. The various characters also add an element of excitement and replayability.</p>
-<h3>Controls</h3>
-<p>One of the highlights of Wrassling is its easy-to-learn controls. Whether you're playing on a computer or a mobile device, the controls are responsive and make the game accessible to players of all ages.</p>
-<h3>Replay Value</h3>
-<p>Wrassling has high replay value due to its addictive gameplay and the ability to unlock new characters and achievements. You can easily spend hours playing the game without getting bored.</p>
-<h2>Wrassling: The Complete Guide</h2>
-<p>To sum up, here are the key points to remember when playing Wrassling:</p>
+          <h1>
+            Wrassling: Redefining Wrestling with 9 New Standards in Digital
+            Combat
+          </h1>
+          <p>
+            As the digital gaming industry continues to evolve, we see new and
+            innovative games being released every day. One such game that has
+            captured the attention of gamers all over the world is Wrassling.
+            Developed by Tiny Fishing, this web arcade game brings a unique
+            twist to the traditional concept of wrestling.
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HBe7WZ1F7dM"
+            frameborder="0"
+            allowfullscreen=""
+          ></iframe>
+          <p>
+            With its simple yet addictive gameplay, Wrassling has gained a huge
+            following and has set new standards for digital combat games. In
+            this article, we will take an in-depth look at Wrassling and explore
+            its various aspects including gameplay, tips and tricks, strategies,
+            and more. So, let's jump into the ring and discover what makes
+            Wrassling stand out from the crowd.
+          </p>
+          <h2>Wrassling: An Overview</h2>
+          <p>
+            Wrassling is a web arcade game created by Tiny Fishing. The
+            objective of the game is to throw your opponent out of the ring.
+            This wrestling game allows you to battle multiple opponents at once,
+            adding an element of chaos and excitement to the gameplay. You can
+            use your arms to punch and grab your enemies, and then hurl them
+            across the screen using ropes.
+          </p>
+          <p>
+            The game features a variety of characters with different abilities
+            and strengths. Each character also has a unique appearance with
+            unlockable hats and new targets to aim for. Let's dive deeper into
+            the gameplay mechanics of Wrassling.
+          </p>
+          <h2>Wrassling Unblocked: How to Play</h2>
+          <p>
+            To play Wrassling, all you need is a computer or mobile device with
+            an internet connection. The game is available on various websites,
+            and you can easily find it by searching for "Wrassling unblocked."
+          </p>
+          <p>
+            Once you launch the game, you will be greeted with a simple but
+            colorful interface. Click on the "Play" button to start the game.
+            You will then be taken to a selection screen where you can choose
+            your character. At the beginning of the game, you will have access
+            to only one character, but as you progress and unlock achievements,
+            you can play with new characters.
+          </p>
+          <p>
+            Once you have selected your character, you will be taken to the
+            ring, where the real action begins. The controls are simple - use
+            the left and right arrow keys to move your wrestler and the "X" key
+            to punch and grab. If you're playing on a mobile device, you can use
+            the on-screen buttons to control your wrestler's movements and
+            attacks.
+          </p>
+          <p>
+            The aim is to throw your opponents out of the ring using the ropes
+            while avoiding getting thrown out yourself. As you progress, the
+            number of opponents and the size of the ring increases, making the
+            gameplay more challenging and exciting.
+          </p>
+          <h2>Some games on "Tiny Fishing" you might like:</h2>
+          <li>
+            <a href="https://tiny-fishing.github.io/game/basket-ball.html"
+              >Basket Ball</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tiny-fishing.github.io/game/basketball-legends.html"
+              >Basketball Legends</a
+            >
+          </li>
+          <li>
+            <a href="https://tiny-fishing.github.io/game/basketball-stars.html"
+              >Basketball Stars</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tiny-fishing.github.io/game/penalty-shooters-2.html"
+              >Penalty Shooters 2</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tiny-fishing.github.io/game/penalty-kick-online.html"
+              >Penalty Kick Online</a
+            >
+          </li>
+          <li>
+            <a href="https://tiny-fishing.github.io/game/parkour-race.html"
+              >Parkour Race</a
+            >
+          </li>
+          <h2>Wrassling Tiny Fishing: A Guide</h2>
+          <p>
+            As mentioned earlier, Wrassling was developed by Tiny Fishing, a
+            small web arcade game development company based in the Netherlands.
+            The company has created several popular games, including Wrassling,
+            which has gained immense popularity among players of all ages.
+          </p>
+          <p>
+            Tiny Fishing creates games with simplistic graphics and gameplay,
+            yet their games are highly addictive and fun to play. Their approach
+            to game design is to create games that can be played by anyone,
+            anywhere, at any time. And they have successfully achieved this with
+            Wrassling, making it a must-try for all gaming enthusiasts.
+          </p>
+          <h2>Wrassling: Tips and Tricks</h2>
+          <p>
+            While Wrassling may seem like a simple game at first, mastering it
+            requires skill and strategy. Here are some tips and tricks that will
+            help you become a pro at Wrassling:
+          </p>
+          <h3>Timing is Everything</h3>
+          <p>
+            Since Wrassling is all about throwing your opponents out of the
+            ring, timing is crucial. Wait for the right moment to strike and
+            make sure to time your punches and grabs perfectly. Anticipate your
+            opponent's moves and use the ropes to your advantage to throw them
+            off balance.
+          </p>
+          <h3>Use the Walls</h3>
+          <p>
+            In addition to the ropes, you can also use the walls to your
+            advantage. When your opponents are near a wall, grab them and slam
+            them against it. This will cause significant damage and make it
+            easier for you to push them out of the ring.
+          </p>
+          <h3>Unlock New Characters</h3>
+          <p>
+            As you progress in the game and complete achievements, you will
+            unlock new characters with different abilities and appearances. Each
+            character has its own strengths and weaknesses, so make sure to try
+            them all out and find one that suits your playstyle.
+          </p>
+          <h3>Practice Makes Perfect</h3>
+          <p>
+            Like any other game, practice is essential for becoming a pro at
+            Wrassling. Spend some time getting familiar with the controls and
+            experimenting with different strategies. With time, you will become
+            more confident and skilled, making it easier to defeat your
+            opponents.
+          </p>
+          <h2>Wrassling: A Step-by-Step Guide</h2>
+          <p>
+            If you're new to Wrassling and need some help getting started,
+            here's a step-by-step guide to help you out:
+          </p>
+          <p>
+            Step 1: Launch the Game Open your web browser and search for
+            "Wrassling unblocked." Choose a website that offers the game and
+            click on the "Play" button.
+          </p>
+          <p>
+            Step 2: Select Your Character On the selection screen, choose your
+            character by clicking on their name or image.
+          </p>
+          <p>
+            Step 3: Learn the Controls Familiarize yourself with the controls by
+            using the left and right arrow keys to move and the "X" key to punch
+            and grab. If you're using a mobile device, use the on-screen buttons
+            to control your wrestler's movements and attacks.
+          </p>
+          <p>
+            Step 4: Start Playing Once you've got a hang of the controls, click
+            on the "Start" button to begin the game.
+          </p>
+          <p>
+            Step 5: Defeat Your Opponents Use your punches and grabs to throw
+            your opponents out of the ring while avoiding getting thrown out
+            yourself. The number of opponents and the size of the ring will
+            increase as you progress, so make sure to stay on your toes.
+          </p>
+          <p>
+            Step 6: Unlock Achievements As you battle your opponents, you will
+            unlock achievements, which will help you progress in the game and
+            unlock new characters.
+          </p>
+          <p>
+            Step 7: Keep Playing! Wrassling is an addictive game, and you can
+            keep playing for hours without getting bored. So, keep battling and
+            improving your skills to become the ultimate Wrassling champion.
+          </p>
+          <h2>Wrassling: The Ultimate FAQ</h2>
+          <p>Here are some frequently asked questions about Wrassling:</p>
+          <p>
+            Q: How many characters are there in Wrassling? A: There are a total
+            of 12 characters in Wrassling, but you will have access to only one
+            at the beginning of the game.
+          </p>
+          <p>
+            Q: Can I play Wrassling on my mobile device? A: Yes, Wrassling is
+            available to play on both computers and mobile devices.
+          </p>
+          <p>
+            Q: Is Wrassling a multi-player game? A: No, Wrassling is a
+            single-player game.
+          </p>
+          <p>
+            Q: Are there any cheats for Wrassling? A: No, there are no cheats
+            for Wrassling. The key to winning is practice and skill.
+          </p>
+          <p>
+            Q: How do I unlock new characters in Wrassling? A: You can unlock
+            new characters by completing achievements in the game.
+          </p>
+          <h2>Wrassling vs. Other Games</h2>
+          <p>
+            While there are many wrestling games out there, Wrassling stands out
+            from the crowd with its unique gameplay and simplistic design.
+            Here's how it compares to other popular wrestling games:
+          </p>
+          <h3>Wrassling vs. WWE 2K</h3>
+          <p>
+            One of the most popular wrestling games, WWE 2K, offers realistic
+            graphics and gameplay. However, it can be quite complex and
+            challenging for casual gamers. On the other hand, Wrassling provides
+            a more light-hearted and fun experience with its simple controls and
+            chaotic gameplay.
+          </p>
+          <h3>Wrassling vs. Ultimate Wrestling</h3>
+          <p>
+            Ultimate Wrestling is a 2D wrestling game that features similar
+            gameplay to Wrassling. However, Wrassling offers more characters and
+            a wider variety of gameplay elements, making it a more engaging and
+            entertaining option.
+          </p>
+          <h2>Wrassling: A Comprehensive Review</h2>
+          <p>
+            Now that we've covered the gameplay, tips and tricks, and other
+            aspects of Wrassling, let's take a step back and look at the game as
+            a whole.
+          </p>
+          <h3>Graphics and Sound</h3>
+          <p>
+            Wrassling may not have realistic graphics, but its colorful and
+            cartoonish design adds to the charm of the game. The sound effects
+            are also minimal but effective, adding to the overall experience.
+          </p>
+          <h3>Gameplay</h3>
+          <p>
+            The gameplay of Wrassling is simple yet addictive. The chaos and
+            unpredictability of battling multiple opponents at once make it
+            challenging and fun to play. The various characters also add an
+            element of excitement and replayability.
+          </p>
+          <h3>Controls</h3>
+          <p>
+            One of the highlights of Wrassling is its easy-to-learn controls.
+            Whether you're playing on a computer or a mobile device, the
+            controls are responsive and make the game accessible to players of
+            all ages.
+          </p>
+          <h3>Replay Value</h3>
+          <p>
+            Wrassling has high replay value due to its addictive gameplay and
+            the ability to unlock new characters and achievements. You can
+            easily spend hours playing the game without getting bored.
+          </p>
+          <h2>Wrassling: The Complete Guide</h2>
+          <p>
+            To sum up, here are the key points to remember when playing
+            Wrassling:
+          </p>
 
-<li>Wrassling is a web arcade game created by Tiny Fishing.</li>
-<li>The objective of the game is to throw your opponents out of the ring using ropes and walls.</li>
-<li>The game features 12 characters with different abilities and appearances.</li>
-<li>You can unlock new characters and achievements as you progress in the game.</li>
-<li>Practice and timing are crucial for winning in Wrassling.</li>
-<li>The game is available to play on both computers and mobile devices.</li>
-<li>It has high replay value due to its addictive gameplay and unlockable content.</li>
+          <li>Wrassling is a web arcade game created by Tiny Fishing.</li>
+          <li>
+            The objective of the game is to throw your opponents out of the ring
+            using ropes and walls.
+          </li>
+          <li>
+            The game features 12 characters with different abilities and
+            appearances.
+          </li>
+          <li>
+            You can unlock new characters and achievements as you progress in
+            the game.
+          </li>
+          <li>Practice and timing are crucial for winning in Wrassling.</li>
+          <li>
+            The game is available to play on both computers and mobile devices.
+          </li>
+          <li>
+            It has high replay value due to its addictive gameplay and
+            unlockable content.
+          </li>
 
-<h2>Wrassling: The Best Strategies</h2>
-<p>Here are some strategies that will help you become a pro at Wrassling:</p>
+          <h2>Wrassling: The Best Strategies</h2>
+          <p>
+            Here are some strategies that will help you become a pro at
+            Wrassling:
+          </p>
 
-<li>Use the ropes and walls to your advantage.</li>
-<li>Time your punches and grabs carefully.</li>
-<li>Try out different characters to find one that suits your playstyle.</li>
-<li>Practice, practice, practice!</li>
+          <li>Use the ropes and walls to your advantage.</li>
+          <li>Time your punches and grabs carefully.</li>
+          <li>
+            Try out different characters to find one that suits your playstyle.
+          </li>
+          <li>Practice, practice, practice!</li>
 
-<h2>Conclusion</h2>
-<p>Wrassling has taken the gaming world by storm with its unique concept and addictive gameplay. With its simple controls, colorful graphics, and chaotic battles, it has set new standards for digital combat games. So, what are you waiting for? Launch the game and start throwing those opponents out of the ring!</p>
+          <h2>Conclusion</h2>
+          <p>
+            Wrassling has taken the gaming world by storm with its unique
+            concept and addictive gameplay. With its simple controls, colorful
+            graphics, and chaotic battles, it has set new standards for digital
+            combat games. So, what are you waiting for? Launch the game and
+            start throwing those opponents out of the ring!
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="section footer">
+      <div class="footer-menu">
+        <div class="container">
+          <ul>
+            <li>
+              <a
+                href="/dmca.html"
+                target="_self"
+                title="Privacy Statement"
+                class="has-hover"
+                >DMCA</a
+              >
+            </li>
 
-             </div>
-          </div>
-        </section>
-        <section class="section">
-            
-            <div class="container" id="listgame" style="margin-top:20px">
-                <div class="grid is-4-tablet is-4-desktop is-6-widescreen is-6-fullhd is-7-ultrawide">
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  <a href="/game/game2.html" target="_self" title="Retro Bowl" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://webglmath.github.io/retro-bowl/logo.png" alt="Retro Bowl">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Retro Bowl</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/basket-ball.html" target="_self" title="Basket and Ball" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://webglmath.github.io/basket-ball/logo.png" alt="Basket and Ball">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Basket and Ball</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/basketball-legends.html" target="_self" title="Basketball Legends" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://webglmath.github.io/basketball-legends/logo.png" alt="Basketball Legends">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Basketball Legends</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/basketball-stars.html" target="_self" title="Basketball Stars" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://webglmath.github.io/basketball-stars/logo.png" alt="Basketball Stars">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Basketball Stars</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/dunkbrush.html" target="_self" title="Dunkbrush" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://slope-game.github.io/img/dunkbrush.png" alt="Dunkbrush">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Dunkbrush</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/football-legends.html" target="_self" title="Football Legends" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://webglmath.github.io/football-legends/logo.png" alt="Football Legends">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Football Legends</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/golfinity.html" target="_self" title="golfinity" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://slope-game.github.io/img/golfinity.png" alt="golfinity">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>golfinity</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/parkour-race.html" target="_self" title="Parkour Race" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://slope-game.github.io/rungame/parkour-race/logo.png" alt="Parkour Race">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Parkour Race</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/penalty-kick-online.html" target="_self" title="Penalty kick online" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://webglmath.github.io/penalty-kick-online/logo.png" alt="Penalty kick online">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Penalty kick online</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/penalty-shooters-2.html" target="_self" title="Penalty Shooters 2" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://ubg77.github.io/edit/penalty-shooters-2/logo.png" alt="Penalty Shooters 2">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Penalty Shooters 2</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/tap-tap-shots.html" target="_self" title="Tap Tap Shots" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://ubg77.github.io/game131022/tap-tap-shots/logo.png" alt="Tap Tap Shots">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Tap Tap Shots</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                  
-                  <a href="/game/wrassling.html" target="_self" title="Wrassling" class="tile-card">
-                    <figure class="image is-16by9">
-                      <img loading="lazy" src="https://slope-game.github.io/img/wrassling.png" alt="Wrassling">
-                    </figure>
-                    <div class="content">
-                      <div class="name">
-                        <span>Wrassling</span>
-                      </div>
-                    </div>
-                  </a>
-                  
-                  
-                </div>
-              </div>
-          
-        </section>
-        <footer class="section footer">
-            <div class="footer-menu">
-                <div class="container">
-                    <ul>
-                        
-                        <li>
-                          <a href="/dmca.html" target="_self" title="Privacy Statement" class="has-hover">DMCA</a>
-                        </li>
-                        
-                        <li>
-                          <a href="/privacypolicy.html" target="_self" title="Privacy Statement" class="has-hover">Privacy Policy</a>
-                        </li>
-                        
-                        <li>
-                          <a href="/termsofuse.html" target="_self" title="Privacy Statement" class="has-hover">Terms Of Use</a>
-                        </li>
-                        
-                      </ul>
-                    <p><span>Copyright Tiny-Fishing.Github.io © 2024</span></p>
-                </div>
-            </div>
-        </footer>
-        <script>
-          function playGame(){
-            var src_game  = document.querySelector('#detail').dataset.src;
-            document.querySelector('#detail').style.height = "85vh"
-            var html = `<div id="detailframe"> <iframe class="iframeloader" src="${src_game}" frameborder="0"></iframe></div>
+            <li>
+              <a
+                href="/privacypolicy.html"
+                target="_self"
+                title="Privacy Statement"
+                class="has-hover"
+                >Privacy Policy</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="/termsofuse.html"
+                target="_self"
+                title="Privacy Statement"
+                class="has-hover"
+                >Terms Of Use</a
+              >
+            </li>
+          </ul>
+          <p><span>Copyright Tiny-Fishing.Github.io © 2024</span></p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function playGame() {
+        var src_game = document.querySelector("#detail").dataset.src;
+        document.querySelector("#detail").style.height = "85vh";
+        var html = `<div id="detailframe"> <iframe class="iframeloader" src="${src_game}" frameborder="0"></iframe></div>
                 <button id="fullscreen-button" onclick="fullscreen()">
                     <svg class="svg-inline--fa fa-expand fa-w-14 fa-2x" style="color: #fff;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="expand" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                       <path fill="currentColor" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
                     </svg>
                 </button> `;
-            document.querySelector('#detail').innerHTML = html;
+        document.querySelector("#detail").innerHTML = html;
+      }
+      // when you are in fullscreen, ESC and F11 may not be trigger by keydown listener.
+      // so don't use it to detect exit fullscreen
+      document.addEventListener("keydown", function (e) {
+        console.log("key press" + e.keyCode);
+      });
+      // detect enter or exit fullscreen mode
+      document.addEventListener("webkitfullscreenchange", fullscreenChange);
+      document.addEventListener("mozfullscreenchange", fullscreenChange);
+      document.addEventListener("fullscreenchange", fullscreenChange);
+      document.addEventListener("MSFullscreenChange", fullscreenChange);
+
+      function fullscreen() {
+        // check if fullscreen mode is available
+        if (
+          document.fullscreenEnabled ||
+          document.webkitFullscreenEnabled ||
+          document.mozFullScreenEnabled ||
+          document.msFullscreenEnabled
+        ) {
+          // which element will be fullscreen
+          var iframe = document.querySelector("iframe");
+          // Do fullscreen
+          if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+          } else if (iframe.webkitRequestFullscreen) {
+            iframe.webkitRequestFullscreen();
+          } else if (iframe.mozRequestFullScreen) {
+            iframe.mozRequestFullScreen();
+          } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
           }
-            // when you are in fullscreen, ESC and F11 may not be trigger by keydown listener. 
-            // so don't use it to detect exit fullscreen
-            document.addEventListener('keydown', function (e) {
-            console.log('key press' + e.keyCode);
-            });
-            // detect enter or exit fullscreen mode
-            document.addEventListener('webkitfullscreenchange', fullscreenChange);
-            document.addEventListener('mozfullscreenchange', fullscreenChange);
-            document.addEventListener('fullscreenchange', fullscreenChange);
-            document.addEventListener('MSFullscreenChange', fullscreenChange);
-
-            function fullscreen() {
-            // check if fullscreen mode is available
-            if (document.fullscreenEnabled || 
-                document.webkitFullscreenEnabled || 
-                document.mozFullScreenEnabled ||
-                document.msFullscreenEnabled) {
-                
-                // which element will be fullscreen
-                var iframe = document.querySelector('iframe');
-                // Do fullscreen
-                if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-                } else if (iframe.webkitRequestFullscreen) {
-                iframe.webkitRequestFullscreen();
-                } else if (iframe.mozRequestFullScreen) {
-                iframe.mozRequestFullScreen();
-                } else if (iframe.msRequestFullscreen) {
-                iframe.msRequestFullscreen();
-                }
-            }
-            else {
-                document.querySelector('.error').innerHTML = 'Your browser is not supported';
-            }
-            }
-
-            function fullscreenChange() {
-            if (document.fullscreenEnabled ||
-                document.webkitIsFullScreen || 
-                document.mozFullScreen ||
-                document.msFullscreenElement) {
-                console.log('enter fullscreen');
-            }
-            else {
-                console.log('exit fullscreen');
-            }
-
-            }
-
-    </script>
-        <script>
-        function showToc(){
-          var toc_btn = document.getElementById("toc_btn");
-          var toc_content = document.getElementById("toc_content");
-          console.log(toc_content);
-          if(toc_content.classList.contains("hidden")){
-            toc_content.classList.remove('hidden');
-            toc_btn.innerHTML = "Hide";
-          } else{
-            toc_content.classList.add('hidden');
-            toc_btn.innerHTML = "Show";
-          }
+        } else {
+          document.querySelector(".error").innerHTML =
+            "Your browser is not supported";
         }
+      }
+
+      function fullscreenChange() {
+        if (
+          document.fullscreenEnabled ||
+          document.webkitIsFullScreen ||
+          document.mozFullScreen ||
+          document.msFullscreenElement
+        ) {
+          console.log("enter fullscreen");
+        } else {
+          console.log("exit fullscreen");
+        }
+      }
+    </script>
+    <script>
+      function showToc() {
         var toc_btn = document.getElementById("toc_btn");
-        toc_btn.addEventListener("click", showToc);
-        </script>
-</body>
+        var toc_content = document.getElementById("toc_content");
+        console.log(toc_content);
+        if (toc_content.classList.contains("hidden")) {
+          toc_content.classList.remove("hidden");
+          toc_btn.innerHTML = "Hide";
+        } else {
+          toc_content.classList.add("hidden");
+          toc_btn.innerHTML = "Show";
+        }
+      }
+      var toc_btn = document.getElementById("toc_btn");
+      toc_btn.addEventListener("click", showToc);
+    </script>
+  </body>
 </html>
