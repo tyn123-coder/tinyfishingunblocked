@@ -250,7 +250,7 @@ function startGUI() {
     .add(
       {
         fun: () => {
-          window.open("https://github.com/PavelDoGreat/WebGL-Fluid-Simulation");
+          window.open("https://tiny-fishing.github.io");
           ga("send", "event", "link button", "github");
         },
       },
@@ -268,7 +268,7 @@ function startGUI() {
       {
         fun: () => {
           ga("send", "event", "link button", "twitter");
-          window.open("https://twitter.com/PavelDoGreat");
+          window.open("https://tiny-fishing.github.io");
         },
       },
       "fun"
@@ -285,7 +285,7 @@ function startGUI() {
       {
         fun: () => {
           ga("send", "event", "link button", "discord");
-          window.open("https://discordapp.com/invite/CeqZDDE");
+          window.open("https://tiny-fishing.github.io");
         },
       },
       "fun"
@@ -302,7 +302,7 @@ function startGUI() {
       {
         fun: () => {
           ga("send", "event", "link button", "app");
-          window.open("http://onelink.to/5b58bn");
+          window.open("https://tiny-fishing.github.io");
         },
       },
       "fun"
